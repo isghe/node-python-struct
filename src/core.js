@@ -442,7 +442,7 @@ function generateClass(options) {
                 // Update size
                 decimal = decimal ? parseInt(decimal, 10) : 0;
                 if (c === 's') {
-                    size += decimal || 0;
+                    size += decimal || 1;
                 } else if (c === 'p') {
                     size += decimal || 1;
                 } else {
@@ -498,7 +498,7 @@ function generateClass(options) {
 
                 if (c === 's') {
                     repeat = 1;
-                    size = decimal;
+                    size = decimal || 1;
                 } else if (c === 'p') {
                     repeat = 1;
                     size = decimal || 1;
@@ -580,7 +580,7 @@ function generateClass(options) {
 
                 if (c === 's') {
                     repeat = 1;
-                    size = decimal;
+                    size = decimal || 1;
                 } else if (c === 'p') {
                     repeat = 1;
                     size = decimal || 1;
